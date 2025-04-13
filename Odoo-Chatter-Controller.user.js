@@ -2,7 +2,7 @@
 // @name            Odoo Chatter Controller
 // @name:tr         Odoo Chatter Kontrolcüsü
 // @namespace       https://github.com/sipsak
-// @version         1.1
+// @version         1.2
 // @description     Adds button to move Chatter and allows resizing when in side position
 // @description:tr  Odoo'da Chatter'ı taşımak ve boyutlandırmak için özellikler ekler
 // @author          Burak Şipşak
@@ -279,6 +279,7 @@
             style.textContent = `
                 .o_form_view .o_form_sheet_bg { max-width: none !important; }
                 .o_form_view .o_form_renderer { max-width: none !important; }
+                .o_form_sheet.position-relative { max-width: none !important; }
             `;
             document.head.appendChild(style);
         }
